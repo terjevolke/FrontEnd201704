@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Juur>
+	<Inimesed>
+		<Inimene nimi="Juku">
+			<Vanus>30</Vanus>
+		</Inimene>
+		<Inimene nimi="Kalle">
+			<Vanus>27</Vanus>
+		</Inimene>
+	</Inimesed>
+</Juur>
