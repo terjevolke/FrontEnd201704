@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>Raini leht</title>
-    <meta name="description" content="max 256 characters"
+    <link rel="icon" href="styles/favicons/favicon.ico" sizes="16x16">
+    <meta name="description" content="max 256 characters">
+<!-- BEGIN Faviconid erinevatel seadmetel -->
+    <link rel="apple-touch-icon" sizes="57x57" href="styles/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="styles/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="styles/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="styles/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="styles/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="styles/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="styles/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="styles/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="styles/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="styles/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="styles/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="styles/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="styles/favicons/favicon-16x16.png">
+    <link rel="manifest" href="styles/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<!-- END Faviconid erinevatel seadmetel -->
+
+<!-- BEGIN Facebookis kuvatav lehe info Open Graph - app_id tuleb facebooki arendaja lehel teha statiska või logimise jaoks-->
+    <meta property="fb:app_id" content="67527652365" /> 
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.neti.ee" />
+    <meta property="og:title" content="Raini leht" />
+    <meta property="og:description" content="Lehe kirjeldus" />
+    <meta property="og:image" content="http://pildiaadress" />
+<!-- END Facebookis kuvatav lehe info Open Graph-->
+
 </head>
 <body>
 <header>
   <a href="/"><img src="http://www.carlogos.org/logo/Subaru-logo.jpg"></a>
 </header>    
     <main>
-    <article id="artikkel">
-        <h1> Lorem Ipsum ÖÖBIK</h1>
+    <!-- Schema on Google otsingumootori jaoks -->
+    <article id="artikkel" itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name"> Lorem Ipsum ÖÖBIK</h1>
+        <br><span> Autor: </span><cite itemprop="author"> Antonio </cite>
+        <br><time datetime="2010-07-03" itemprop="datePublished">30-nes juuli 2010</time>
+
         <blockquote>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</blockquote>
         <blockquote>"Ei ole ka kedagi, kes armastab ja otsib ja tahab valu iseennast, lihtsalt sellepärast, et see on valu..."</blockquote>
-        <p>
+        <p itemprop="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis dui urna. Fusce scelerisque ante eget urna vestibulum, ac venenatis ex aliquam. Integer nibh sem, consectetur sit amet libero quis, facilisis elementum tortor. In vel arcu eu ante malesuada sollicitudin. Phasellus a nibh lacus. Praesent tortor urna, imperdiet nec imperdiet at, eleifend in nunc. Vivamus eleifend a dolor id venenatis. Pellentesque vitae tellus sed dolor venenatis hendrerit. Vestibulum molestie purus quis ex interdum, vel tempus purus pretium.</p>
         <p>Nulla ac lacus in felis pulvinar pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum molestie interdum pretium. Nunc semper dui tortor, id efficitur urna pharetra nec. Nunc eu dignissim tortor. Aenean ante orci, bibendum eu sollicitudin a, tempor vitae mauris. Phasellus commodo metus velit, id pellentesque nisi rutrum in. Sed luctus eu mauris in elementum. Suspendisse aliquam nec turpis at consequat. Fusce ante velit, egestas sit amet velit eu, consequat consequat purus. Vestibulum vel felis ipsum. Vestibulum dui lacus, lacinia vel nulla eu, eleifend tincidunt justo. Aliquam lobortis massa ut efficitur feugiat. Nullam lacinia enim id libero convallis, in accumsan erat convallis. Duis auctor pellentesque eros, in fermentum augue tincidunt lacinia.</p>
 
@@ -26,7 +60,12 @@
         </p>
     </article>
     </main>
-
+<aside id="advideo">
+    <video controls>
+        <source src="https:// mingi mp4 formaat videost">
+        Ei toeta.
+    </video>
+</aside> 
     <nav>
         <ul>
             <li>
