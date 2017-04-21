@@ -1,0 +1,26 @@
+body {
+    background-color: paleturquoise;
+}
+#artikkel{
+    background-color: bisque;
+    max-width: 1024px;
+
+
+}
+
+span{
+    font-size: 1.5em;
+}
+article{
+    font-size: 2em;
+}
+.paragraph{
+    font-size: 0.5em;
+}
+nav ul li:nth-last-child(2){
+    border-width: 2px;
+    border-style: dashed; 
+}
+#footer1{
+    background-color: white;
+}
