@@ -28,7 +28,17 @@ nav{
     background: yellow;
     font-size: 2em;
     color: red;
-    position: absolute;
+    display: inline-block;
+    /**display: flex;**/
+
+    /**position: fixed;
+    left:50px;
+    top: 20px;**/
+    padding: 0px 0px 10px 0px;
+}
+#menyytyhiala{
+    height:200px;
+}
+#teine{
     left: 300px;
-    top: 50px;
 }
