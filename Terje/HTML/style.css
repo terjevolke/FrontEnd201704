@@ -1,0 +1,30 @@
+body {
+    background-color: palegoldenrod;
+}
+#artikkel{
+    background-color: peachpuff;
+    max-width:1024px
+    /*px, %,em, rem, pt*/
+}
+article {
+    font-size: 2em;
+}
+ span {font-size:4em;
+ } 
+ .paragrahv{
+     font-size: 0.8em
+ }
+ nav ul li:nth-child(2){
+     border-width: 5px;
+     border-style: dashed;
+ }
+ nav{
+     font-size: 5 em;
+     background-color: indianred;
+     color: lawngreen;
+     position: fixed;
+     left: 50px;
+     top: 50px;
+
+
+ }
