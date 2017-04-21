@@ -1,0 +1,18 @@
+body {
+    background-color: palegoldenrod;
+}
+#artikkel{
+    background-color: peachpuff;
+    max-width: 1024px;
+    /*px, %, em, rem*/
+}
+article {
+    font-size:1em;
+}
+.paragrahv{
+    font-size:0,5em;
+}
+nav ul li:nth-last-child(2){
+    border-width: 1px;
+    border-style: dashed;
+}
