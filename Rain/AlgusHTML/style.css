@@ -73,4 +73,8 @@ header{
     font-size: 2em;
     margin: 5px 5px; /** ruum ümber nupu**/ 
     cursor:pointer;
+    box-shadow: 5px 5px 5px darkgray; /** kolmas 5px määrab udususe**/
+}
+.button:hover{
+    box-shadow:  5px 5px 5px red;
 }
