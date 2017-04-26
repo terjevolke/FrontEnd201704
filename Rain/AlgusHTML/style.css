@@ -44,3 +44,13 @@ nav{
 header{
     display: inline-block;
 }
+#wrapper{
+    display:flex;
+    /** flex reastab elamendid paremalt vaskule, tuleb määrata suund **/
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+
+
+
+}
