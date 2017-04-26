@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>Raini leht</title>
     <link rel="icon" href="styles/favicons/favicon.ico" sizes="16x16">
-<!-- Latest compiled and minified CSS -->
+<!--JQUERY CDN-->
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+
+<!-- BOOTSTRAP CDN Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -60,8 +68,9 @@
       <header>
 <a href="/" id="teine"><img src="http://www.carlogos.org/logo/Subaru-logo.jpg" ></a>
 </header>
-     <nav>
-        <ul>
+     <nav class="navbar navbar-default navbar-fixed-top nav-pills">
+         <div class="container">
+        <ul class="nav nav-pills">
             <li>
                 <a href="#artikkel">Artikli algus</a>
             </li>
@@ -72,6 +81,7 @@
                 <a href="/">Home</a>
             </li>
         </ul>
+         </div>
     </nav>
 
     <main>
@@ -99,7 +109,7 @@
 
 <!-- Tabeli tegemine -->
 
-<table class="table">
+<table class="table table-bordered">
     <caption>Raskused</caption>
     <thead>
         <tr>
