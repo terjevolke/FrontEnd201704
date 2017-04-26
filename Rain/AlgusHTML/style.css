@@ -24,6 +24,9 @@ nav ul li:nth-last-child(2){
 }
 #footer1{
     background-color: white;
+    height: 300px;
+    order: -1;
+    
 }
 nav{
     background: yellow;
@@ -47,8 +50,9 @@ header{
 #wrapper{
     display:flex;
     /** flex reastab elamendid paremalt vaskule, tuleb määrata suund **/
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
     align-content: flex-end;
 
 
