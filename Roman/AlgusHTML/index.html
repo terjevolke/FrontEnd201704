@@ -2,11 +2,21 @@
 <html prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> 
     <!--SEO: ideaalne pikkus 6 sõna -->
 	<title>Lorem Ipsum mi dolor sit amet</title>
     
     <link rel="icon" href="styles/favicons/favicon.ico" sizes="16x16">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
     <!-- BEGIN optional SEO --> <!--SEO: ideaalne pikkus umbes 155 tähemärki -->
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ipsum libero, efficitur ut condimentum a, lacinia non eros. In vel vulputate lectus." />
@@ -48,7 +58,7 @@
     <div id="wrapper">
         <div>
             <a href="#" class="button">Nuppuke</a>
-            <a href="#" class="button">Nuppuke</a>
+            <a href="#" class="button btn disabled" role="button">Nuppuke</a>
         </div>
         <nav id="esimene">
             <ul>
@@ -66,8 +76,9 @@
                 </li>
             </ul>
         </nav>
-        <nav  id="teine">
-            <ul>
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <ul class="nav nav-pills">
                 <li>
                 <a href="../../Andrjus/SimpleHTML/index.html">Andrjuse leht</a>
                 </li>
@@ -81,6 +92,7 @@
                     <a href="/">Pealehele</a>
                 </li>
             </ul>
+        </div>
         </nav>
         <!--<div id="menuuTyhiAla"></div>-->
         <main>
@@ -100,7 +112,7 @@
                 <p class="paragrahv">In id faucibus justo. Aliquam ac varius metus. Proin sed sem auctor, faucibus eros et, facilisis ipsum. Curabitur semper sapien lorem, venenatis rutrum dui accumsan fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam imperdiet, nunc ut porta finibus, purus urna rutrum felis, vitae posuere felis lectus ac nisl. Mauris tempus magna sit amet luctus bibendum. Duis odio neque, suscipit quis orci sed, dapibus mattis felis. Nam euismod quam nec sapien pharetra, sed pellentesque tellus euismod. Nulla interdum viverra enim eget efficitur.</p>
 
                 <p class="paragrahv"> Cras sodales sem a metus interdum finibus. Nam risus nisl, tincidunt ac est non, pulvinar porttitor purus. Nulla dui odio, feugiat quis dui eu, facilisis tempor metus. Quisque mattis, nisl id eleifend porttitor, ante magna lobortis ligula, sed maximus nulla risus id massa. Aenean non nunc purus. Vestibulum sit amet nulla auctor, congue mauris non, placerat lacus. Morbi vitae odio elit. Mauris ut facilisis arcu.</p>
-                <table>
+                <table class="table">
                     <caption>Raskused</caption>
                     <thead>
                         <tr>

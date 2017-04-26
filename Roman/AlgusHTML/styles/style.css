@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga');
 body {
     background-color: palegoldenrod;
     display: inline-block; 
 }
 article{
+    font-family: 'Ranga', cursive;
     font-size: 2em;
 }
 #artikkel{
@@ -81,4 +83,20 @@ footer{
     z-index: -100;
     min-width: 100%;
     min-height: 100%;
+    background: url(http://thenewcode.com/assets/images/polina.jpg) no-repeat;
+    background-size: cover;
+}
+.nav-pills li a{
+    color: yellow;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: plum;
+    }
+}
+@media screen and (min-width: 600px ) and (max-width: 1200px){
+    body{
+        background-color: yellow;
+    }
 }
