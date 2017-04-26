@@ -87,3 +87,15 @@ header{
     background: url(http://www.carlogos.org/logo/Subaru-logo.jpg);
     background-size: cover;
 }
+
+@media (max-width:600px){
+    body:{
+        background-color: yellow;
+    }
+}
+
+@media (min-width:600px) and (max-width: 1200px){
+    body:{
+        background-color: green;
+    }
+}
