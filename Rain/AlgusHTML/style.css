@@ -78,3 +78,12 @@ header{
 .button:hover{
     box-shadow:  5px 5px 5px red;
 }
+#backvideo{
+    position: absolute;
+    /** või fixed**/
+    z-index: -100;
+    min-height: 100%;
+    min-width: 100%;
+    background: url(http://www.carlogos.org/logo/Subaru-logo.jpg);
+    background-size: cover;
+}
