@@ -60,3 +60,17 @@ header{
     align-content: center;
 
 }
+.button{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px; /**ruum nupu sees**/
+    text-align: center;
+    text-decoration: none;
+    /** decoration none võtab ära joone alt**/
+    display: inline-block;
+    /** display: inline-block; - teeb paigutuse lihtsamaks**/
+    font-size: 2em;
+    margin: 5px 5px; /** ruum ümber nupu**/ 
+    cursor:pointer;
+}
