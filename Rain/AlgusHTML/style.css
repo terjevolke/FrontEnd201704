@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 body {
     background-color: darkblue;
     
@@ -14,6 +15,7 @@ span{
 }
 article{
     font-size: 1em;
+    font-family: 'PT Sans', sans-serif;
 }
 .paragraph{
     font-size: 0.5em;
