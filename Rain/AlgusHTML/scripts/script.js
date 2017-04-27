@@ -146,7 +146,7 @@ muutuja = Math.floor(Math.random() *10) + 2; // random 2-11
 
 // Massiivi funktsioonid
 
-masiiv = ["Õun","Pirn","Banaan"];
+massiiv = ["Õun","Pirn","Banaan"];
 massiiv.toString(); // paneb massiivi sõneks
 massiiv.join(", "); // paneb massiivi sõneks koma ja tühikuga eraldatud
 massiiv.pop(); // "Banaan" //"Õun, Pirn
@@ -168,8 +168,39 @@ massiiv.sort();
 massiiv.reverse();
 
 //arvude sorteerimiseks 1,3,6,9
+
+//Näide
 massiiv.sort(function(a,b){return a-b;});
 
+    var massiiv3 = [
+		{"nimi": "Kalle", "vanus": 16},
+		{"nimi": "Juku", "vanus": 12},
+		{"nimi": "Pille", "vanus": 9}
+	];
+    massiiv3.sort(function(a, b){
+        console.log( "võrdle " + a.vanus + ",  " +  b. vanus);
+        return a.vanus - b.vanus;
+    });
+    console.log(massiiv3);
 
 
+// Funktsioonid
+console.log(Date()); //kutsub kuupäeva
 
+function arvSorteerimine(a,b) {
+    return a-b;
+}
+var lahutatu = arvSorteerimine(5,4);
+massiiv2.sort(arvSorteerimine);
+
+function Isik(nimi, vanus){
+    this.nime = nimi;
+    this.vanus = vanus; 
+    this.muudaVanus = function(uusVanus){
+        this.vanus = uusVanus;
+    }
+}
+var isa = new Isik("Juhan", 70);
+var ema = new Isik("Malle", 39);
+isa.muudaVanus(41);
+console.log(isa.nime + "vanus on" + isa.vanus);
