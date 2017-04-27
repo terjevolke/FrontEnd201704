@@ -230,7 +230,7 @@ finally {
 
 //UUS TEEMA
 (function(){
-    //object literal module patter
+    //object literal module pattern
     var minuMoodul = {
         nimi: 'Juku',
         vanus: 34,
