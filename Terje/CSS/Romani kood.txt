@@ -48,8 +48,7 @@
     <div id="wrapper">
         <div>
             <a href="#" class="button">Nuppuke</a>
-            <a href="#" class="button">Nuppuke</a>
-        </div>
+                    </div>
         <nav id="esimene">
             <ul>
                 <li>
