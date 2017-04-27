@@ -1,6 +1,6 @@
 "use strict";
 var muutuja = 5;
-var s6ne = "Tere Päevast";
+var s6ne = "Tere Hommikust";
 var massiiv = ["Tere", "Hi", "Hommikust" ];
 var objekt2 = {"nimi": "Kalle", "vanus": 6};
 var objekt = null;
@@ -70,7 +70,7 @@ console.log(summa)
 
 //Teisendamine
 var muutujaS6nena = muutuja.toString();  //muutuja tõlgendatakse tekstiks
-muutujaS6nena = muutujaS6nena + muutujaS6nena;  // kui väärtus oleks 45 siis summa oleks 4545
+muutujaS6nena = muutujaS6nena + muutujaS6nena;  // kui väärtus oleks 45 siis summa oleks 4545, kuna tegemist on tekstiga
 String(summa); 
 
 muutuja.toExponential(2); // tagastab kujul 4.00e+0
@@ -86,6 +86,44 @@ parseFloat(aasta); //teisendab sõne numbriks nt koos komaga 2007,45
 var muutuja4 = Number.MAX_VALUE;
 if(parseInt("arv 5" !== Number.Nan)){}  //kontrollib, kas on tegemist numbriga
 //MAX_VALUE, MIN_VALUE, NEGATIVE_INFINITY, POSITIVE_INFINITY, NaN - Not a number
+
+//S6ne funktsioonid
+
+var pikkusS6ne = s6ne.length;
+var s6nePos = s6ne.indexOf("Hommik"); //Leiab esimese H tähe positsiooni
+var l6ppPos = s6ne.lastIndexOf("Hommik"); // Leiab viimase märgi
+
+//Lõigata s6ne välja
+s6ne = s6ne.slice(0, l6ppPos-1); // võtan s6ne -st Tere ja jätab hommiku ära
+
+//Asendamine
+s6ne = s6ne.replace("Hommikust", "Päevast"); // Hommikust asenab Päevast sõnaga
+
+//Tähe suurus
+s6ne = s6ne.toUpperCase();
+s6ne = s6ne.toLowerCase();
+
+//Funktsiooni tegemine
+function tyhiFunktsioon(){/*sisu*/};
+tyhiFunktsioon();
+
+//Anonüümne funktsioon
+(function(){
+
+})(); //Anonüümne funktsiooni lõpp
+
+function firstLetterToUpper(str){
+    var laused = str.toLowerCase().split(". ");
+    for(var i = 0; i < laused.lenght; ++i){
+        var t2hed = laused[i].split("");
+        t2hed[0]= t2hed[0].toUpperCase();
+        laused[i]= t2hed.join("");
+    }
+    return laused.join(". ")
+};
+var tootlemataText = "esimeNe teKst. KUSKIL KOhas.";
+var toodeldudText = firstLetterToUpper(tootlemataText);
+console.log(toodeldudText);
 
 
 
