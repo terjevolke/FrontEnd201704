@@ -204,3 +204,45 @@ var isa = new Isik("Juhan", 70);
 var ema = new Isik("Malle", 39);
 isa.muudaVanus(41);
 console.log(isa.nime + "vanus on" + isa.vanus);
+
+
+//Kontrollib sisendit, ja annab teate, kuid hiljem võib ikka selle sisendi vastu võtta või mitte
+
+var tekst = "";
+
+try {
+    if (tekst === "")
+        throw "Teksti pole";
+
+} catch (error) {
+    //console.error(error);        //annab errori consooli
+}
+finally {
+
+}
+
+// call, apply - kutsuvad funktsiooni välja,  bind mitte, kuid bind fikseerib väärtuse ära ja kui tahad uut väärtust, siis tuleb uus bind kutsuda
+
+// isa.muudaVanus.bind(new Isik2(22))(17);
+// isa.muudaVanus.apply(new Isik2(22), [42]);
+// isa.muudaVanus.call(new Isik2(22), 12);
+
+
+//UUS TEEMA
+(function(){
+    //object literal module patter
+    var minuMoodul = {
+        nimi: 'Juku',
+        vanus: 34,
+        ytlenimi: function(){
+            console.log(this.nimi);
+        },
+        muudaNimi: function(uusNimi){
+            this.nimi = uusNimi;
+        }
+    };
+minuMoodul.muudaNimi('Kalle');
+minuMoodul.ytlenimi()
+
+
+})();
