@@ -37,4 +37,7 @@ muutuja = muutuja + 1;
 muutuja++; //sama mis eelmine tehe, liidab ühe juurde
 ++muutuja; // sama mis eelmine, kuid arv suurendatakse hiljem
 muutuja--; --muutuja; //vähendab ühe võrra
-  
+muutuja += 2; // +=; -=; *=; /=
+
+
+
