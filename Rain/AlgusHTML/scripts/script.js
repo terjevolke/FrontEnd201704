@@ -63,8 +63,29 @@ while (k<10) {
         //continue; katkestab korraks???
     summa += k;
     ++k;
-}
+} // teeb läbi tsükli 0 -9 ja liidab kõik kokku, if on antud juhul üleliigne kuna meil on positiivsed arvud
 console.log(summa)
 
 //do{}while(true); //haruldane
+
+//Teisendamine
+var muutujaS6nena = muutuja.toString();  //muutuja tõlgendatakse tekstiks
+muutujaS6nena = muutujaS6nena + muutujaS6nena;  // kui väärtus oleks 45 siis summa oleks 4545
+String(summa); 
+
+muutuja.toExponential(2); // tagastab kujul 4.00e+0
+muutuja.toFixed(2); //kaks kohta peale nulli
+muutuja.toPrecision(2); // kaks kohta peale koma, koos ümardamisega
+
+var aasta = "2007.45";
+Number(aasta); //teisendab sõne numbriks
+parseInt(aasta); //teisendab sõne täisarvuks 2007
+parseFloat(aasta); //teisendab sõne numbriks nt koos komaga 2007,45
+
+
+var muutuja4 = Number.MAX_VALUE;
+if(parseInt("arv 5" !== Number.Nan)){}  //kontrollib, kas on tegemist numbriga
+//MAX_VALUE, MIN_VALUE, NEGATIVE_INFINITY, POSITIVE_INFINITY, NaN - Not a number
+
+
 
