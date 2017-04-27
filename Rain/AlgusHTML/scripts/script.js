@@ -126,4 +126,47 @@ var toodeldudText = firstLetterToUpper(tootlemataText);
 console.log(toodeldudText);
 
 
+s6ne = s6ne + s6ne;
+s6ne = s6ne.concat(" ", "Juku", "...");
+var massiiv2 = s6ne.split(" ");
+
+//Regex
+var pos = s6ne.search(/Hommik/i);
+
+//Math
+// E (euleri), PI, SQRT, LN2, LN10, LOG2E, LOG10E
+
+muutuja = Math.pow(Math.PI, 2); // Pii astmes kaks
+
+//asin(x), sin(x) ...
+// abs(x), ceil(x) -ümardab üles, floor(x) -ümardab alla, round(x) -ümardab tavaliselt
+//exp(x), log(x), pow(x,y) -astmele
+muutuja = Math.floor(Math.random() *10); //random annab väärtuse 0-9
+muutuja = Math.floor(Math.random() *10) + 2; // random 2-11
+
+// Massiivi funktsioonid
+
+masiiv = ["Õun","Pirn","Banaan"];
+massiiv.toString(); // paneb massiivi sõneks
+massiiv.join(", "); // paneb massiivi sõneks koma ja tühikuga eraldatud
+massiiv.pop(); // "Banaan" //"Õun, Pirn
+massiiv[0]; // Õun
+massiiv.lenght;
+massiiv.push("Tomat"); // Lisab Tomat massiivi ja ütleb uue massiivi pikkuse
+//shift() ja unshift() lisab ja eemaldab esimese elemendi massiivis
+
+massiiv[1] = "Kõrvits"; //vahetab elemendi välja 
+
+//delete massiiv[1]  --MITTE TEHA - Undefined tulemus
+
+massiiv = massiiv.splice(2, 1, "Ploom", "Vaarikas"); //lisab Plomi ja Vaarika massiivi vahele 
+massiiv.concat(massiiv); // lisab massiivile teise massiivi juurde
+massiiv = massiiv.slice(massiiv.length/2); //teeb massiivi kaks korda väiksemaks
+
+//SORTEERIMINE
+massiiv.sort();
+massiiv.reverse();
+
+//arvude sorteerimiseks 1,3,6,9
+massiivsort(function(a,b){return a-b;});
 
