@@ -30,3 +30,11 @@ switch (muutuja) {
     default:
         break;
 }
+muutja = 6 + 4;
+// +;-;*,/ -võimalikud tehted
+muutuja = 5 % 1;  //jääk
+muutuja = muutuja + 1;
+muutuja++; //sama mis eelmine tehe, liidab ühe juurde
+++muutuja; // sama mis eelmine, kuid arv suurendatakse hiljem
+muutuja--; --muutuja; //vähendab ühe võrra
+  
