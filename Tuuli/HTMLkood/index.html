@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <title> Tarkvaraarenduse Front-end kursuse kodutöö</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="script" href="scripts/script.js">
 </head>
 
-<body>
+<header>
+<p> Tänane kuupäev:
+    <body><script type="text/javascript">
+var kuupaev = new Date();
+var paev = kuupaev.getDate();
+var kuu = kuupaev.getMonth();
+var aasta = kuupaev.getFullYear();
+document.write("<b>" + paev + "/" + (kuu + 1) + "/" + aasta + "</b>");
+</script>
+    
+     </p>
+</header>
+
 <h1>Front-end arenduse kursus 19.04. - 12.05.2017</h1>
 
 <p><a href="http://www.koolitus.ee/et/component/itk/c1881/ITK-497-Tarkvaraarenduse-Front-end?Itemid=199/">Programm</a></p>
@@ -28,6 +41,16 @@
 </ul> 
 <h2>Lisan pildi</h2>
 <img src="6104_web_Kate_Lectora.png" alt="Õpin" style="width:508px;height:799px;">
+
+<p>
+<script type="text/javascript">
+kasutaja="eioleminu"; /*ei ole reaalne aadress*/
+server="gmail.com";
+document.write('Minu e-posti aadress on: ');
+document.write('<a href="mailto:' + kasutaja + '@' + server + '">');
+document.write(kasutaja + '@' + server +'</a>');
+</script>
+</p>
 
 </body>
 
