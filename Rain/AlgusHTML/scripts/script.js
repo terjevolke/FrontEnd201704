@@ -168,5 +168,8 @@ massiiv.sort();
 massiiv.reverse();
 
 //arvude sorteerimiseks 1,3,6,9
-massiivsort(function(a,b){return a-b;});
+massiiv.sort(function(a,b){return a-b;});
+
+
+
 
