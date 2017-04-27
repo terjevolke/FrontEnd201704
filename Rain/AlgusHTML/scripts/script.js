@@ -246,3 +246,19 @@ minuMoodul.ytlenimi()
 
 
 })();
+
+(function(){
+    //revaling module pattern
+    var minuMoodul = (function(){
+        var nimi ='Juku';
+        function ytleNimi(){
+            console.log(nimi);
+        };
+        function muudaNimi(uusNimi){
+            nimi = uusNimi;
+        };
+        return { muudaNimi: muudaNimi, ytleNimi: ytleNimi };
+    })();
+    minuMoodul.muudaNimi('Madis');
+    minuMoodul.ytleNimi();
+})();
