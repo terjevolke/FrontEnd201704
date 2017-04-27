@@ -65,13 +65,14 @@ tyhiFunksioon();
 	/*Teisendamine*/
 	//Teised tüübid sõneks
 	muutuja.toString();
-	String(muutuja);//sama mis eelmine;
+	new String(muutuja);//sama mis eelmine;
+    console.log(String(muutuja));
 	//arv sõneks täpsusega
 	muutuja.toExponential(2); //5.00e+0
 	muutuja.toFixed(2); //5.00
 	muutuja.toPrecision(2); //5.00 - koos ümardamisega
 	var aasta = "2007"
-	Number(aasta);
+	new Number(aasta);
 	parseInt(aasta); //"2007 aasta"
 	parseFloat(aasta); //Tagastab ka koma kohti
 	/*fikseeritud väärtused*/
@@ -160,4 +161,83 @@ tyhiFunksioon();
         return a.vanus - b.vanus;
     });
     console.log(massiiv3);
+
+    /*Funktsioonid*/
+    console.log(Date());
+
+    function arvSorteerimine(a, b) {
+        return a-b;
+    }
+    var lahutatu = arvSorteerimine(5,4);
+    massiiv2.sort(arvSorteerimine);
+
+    function Isik(nimi, vanus){
+        this.nime = nimi;
+        this.vanus = vanus;
+        this.muudaVanus = function(uusVanus){
+            this.vanus = uusVanus;
+            console.log(this);
+        }
+    }
+     function Isik2(vanus){
+
+        this.vanus = vanus;
+        this.muudaVanus = function(uusVanus){
+            this.vanus = uusVanus;
+            console.log(this);
+        }
+    }
+    var isa = new Isik("Juhan", 70);
+    var ema = new Isik("Malle", 39);
+    isa.muudaVanus(41);
+    console.log(isa.nime + " vanus on " + isa.vanus);
+
+    var tekst = "";
+    //...
+    try {
+        if(tekst === "")
+            throw "Teksti pole";
+        //...
+    } catch (error) {
+        //console.error(error);
+    } 
+    finally{
+
+    }
+    //call, apply, bind
+    isa.muudaVanus.apply(new Isik2(22), [47]);
+    isa.muudaVanus.call(new Isik2(22), 12);
+    isa.muudaVanus = isa.muudaVanus.bind(new Isik2(22), 17);
+    isa.muudaVanus(12);
+  
+})();
+(function(){
+    //object literal module patter
+    var minuMoodul = {
+        nimi: 'Juku',
+        vanus: 34,
+        ytleNimi: function(){
+            console.log(this.nimi);
+        },
+        muudaNimi: function(uusNimi){
+            this.nimi = uusNimi;
+        }
+    };
+    minuMoodul.muudaNimi('Kalle');
+    minuMoodul.ytleNimi();
+})();
+(function(){
+    //revaling module pattern
+    var minuMoodul = (function(){
+        var nimi ='Juku';
+        function ytleNimi(){
+            console.log(nimi);
+        };
+        function muudaNimi(uusNimi){
+            nimi = uusNimi;
+        };
+        return { muudaNimi: muudaNimi, ytleNimi: ytleNimi };
+    })();
+    minuMoodul.muudaNimi('Madis');
+    minuMoodul.ytleNimi();
 })();
