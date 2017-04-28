@@ -383,5 +383,33 @@ minuMoodul.ytlenimi()
     artikkel.parentElement; //antud juhul <main>
     artikkel.children; // annab lapse
 
+
 })();
+
+//kui leht on laetud kutsub välja funktsiooni alert TERE
+
+//DOMContentLoaded - loeb ära htmli, Load - loeb terve lehe
+
+
+
+function domLoaded(){
+    
+   var pealkirjad = document.getElementsByTagName('h1')
+   pealkirjad[0].classList.add('blockquote-reverse');
+ 
+}
+
+function loaded(){
+     alert('Tõsta pealkiri tagasi');
+   var pealkirjad = document.getElementsByTagName('h1')
+   pealkirjad[0].classList.remove('blockquote-reverse');
+   pealkirjad[0].on
+ 
+}
+document.addEventListener('DOMContentLoaded', domLoaded)
+window.onload = loaded;
+
+
+
+
 
