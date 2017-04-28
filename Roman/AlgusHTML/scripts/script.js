@@ -211,7 +211,7 @@ tyhiFunksioon();
     isa.muudaVanus(12);
   
 })();
-(function(){
+/*(function(){
     //object literal module patter
     var minuMoodul = {
         nimi: 'Juku',
@@ -225,8 +225,8 @@ tyhiFunksioon();
     };
     minuMoodul.muudaNimi('Kalle');
     minuMoodul.ytleNimi();
-})();
-(function(){
+})();*/
+/*(function(){
     //revaling module pattern
     var minuMoodul = (function(){
         var nimi ='Juku';
@@ -240,7 +240,7 @@ tyhiFunksioon();
     })();
     minuMoodul.muudaNimi('Madis');
     minuMoodul.ytleNimi();
-})();
+})();*/
 /*(function(){
     function p2randab(laps, vanem){
         laps.vanem_ = vanem;
@@ -294,7 +294,7 @@ tyhiFunksioon();
     sinuKana.nimeta();
     sinuKana.lenda();
 })();*/
-(function(){
+/*(function(){
     //prototypal
     var objekt = {
         klass: 'objekt',
@@ -338,4 +338,54 @@ tyhiFunksioon();
     sinuKana.klassifitseeri();
     sinuKana.nimeta();
     sinuKana.lenda();
+})();*/
+(function(){
+    document;
+    document.getElementsByTagName('nav')[0];
+    document.getElementsByClassName('paragrahv');
+    var artikkel = document.getElementById('artikkel');
+    document.querySelector('#artikkel');
+    document.querySelectorAll('.paragrahv');
+    $('.paragrahv');
+    artikkel.className;
+    artikkel.classList;
+    artikkel.parentElement;
+    artikkel.children;
 })();
+var pealkirjad = document.getElementsByTagName('h1');
+function domLoaded(){
+    pealkirjad[0].classList.add('blockquote-reverse');
+}
+function loaded(){
+    pealkirjad[0].classList.remove('blockquote-reverse');
+}
+document.addEventListener('DOMContentLoaded', domLoaded);
+//window.onload = loaded;
+window.addEventListener('load', loaded);
+//$(document).ready();
+//DOMContentLoaded, Load
+
+var nuppuke = document.getElementById("nupp");
+function nuppuvajutus(){
+    this.innerHTML="Vajutatud";
+}
+nuppuke.addEventListener("click", nuppuvajutus);
+//nuppuke.removeEventListener()
+pealkirjad[0].addEventListener("click", nuppuvajutus);
+var muutujad = document.querySelectorAll("var input");
+var vastus = document.getElementById("vastus");
+function sisend(){
+    var arv1 = parseFloat(muutujad[0].value) || 0;
+    var arv2 = parseFloat(muutujad[1].value) || 0;
+    vastus.innerHTML = arv1 + arv2;
+    console.log(arv1 + " " + arv2);
+}
+nuppuke.addEventListener("click", sisend);
+//muutujad[0].addEventListener("input", sisend);
+//muutujad[1].addEventListener("input", sisend);
+function key(event){
+    if(event.which===13)
+        sisend.call(this);
+};
+muutujad[0].addEventListener("keydown", key);
+muutujad[1].addEventListener("keydown", key);
