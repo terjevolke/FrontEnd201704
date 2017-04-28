@@ -2,14 +2,27 @@ body {
     background-color: lightblue;
 }
 #artikkel{
-    background-color: yellowgreen;
+    background-color: white;
     max-width:1024px
     /*px, %,em, rem, pt*/
+}
+h1
+{
+text-align:center;
+font-family: arial;
+color:red
+}
+q
+{
+text-align:center;
+font-family: arial;
+font-size: 2em;
+color:darkred;
 }
 article {
     font-size: 1em;
 }
- span {font-size:1em;
+ span {font-size:3em;
  } 
  .paragrahv{
      font-size: 2em
@@ -27,4 +40,4 @@ article {
      top: 30px;
 
 
- }
+ }#
