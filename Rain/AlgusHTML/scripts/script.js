@@ -269,7 +269,7 @@ minuMoodul.ytlenimi()
 // vanem_ "_" määrab muutuja lokaalsuse
 // funktsioon p2randab määrab ära, et lapsobjekt all saaks kasutada juba üleval toodud muutujaid (nimetus, h22litsus)
 
-(function(){
+/*(function(){
     function p2randab(laps, vanem){
         laps.vanem_ = vanem;
         laps.prototype = Object.create(
@@ -305,7 +305,6 @@ minuMoodul.ytlenimi()
     //Pärandamine
     var Lind = function(nimetus, h22litsus, kasLendab){
         Lind.vanem_.call(this, nimetus, h22litsus);
-        //Lind.vanem_.call(this, h22litsus);
         this.kasLendab = kasLendab;
     };
     p2randab(Lind, Loom);
@@ -320,6 +319,51 @@ minuMoodul.ytlenimi()
         console.log('See lind on ' + this.nimetus);
     }
     var sinuKana = new Lind('kana', 'pak-pak', false);
+    sinuKana.nimeta();
+    sinuKana.lenda();
+})();*/
+(function(){
+    //prototypal
+    var objekt = {
+        klass: 'objekt',
+        loo: function(v22rtused){
+            var instant = Object.create(this);
+            Object.keys(v22rtused).forEach(
+                function(v6ti){
+                    instant[v6ti] = v22rtused[v6ti];
+                }
+            );
+            return instant;
+        }
+    };
+    var loom = objekt.loo({
+        klass: 'loom',
+        klassifitseeri: function(){
+            console.log(this.klass);
+        },
+        nimeta: function(){
+            console.log('See loom on ' + this.nimetus);
+        }  
+    });
+    var lind = loom.loo({
+        klass: 'lind',
+        nimeta: function(){
+            console.log('See lind on ' + this.nimetus);
+        },
+        lenda: function(){
+           if(this.kasLendab){
+                console.log('Ma lendan');
+            }else {
+                console.log('Ära õrrita');
+            } 
+        }
+    });
+
+    var sinuKana = lind.loo({
+        nimetus: 'kana',
+        kaslendab: false
+    });
+    sinuKana.klassifitseeri();
     sinuKana.nimeta();
     sinuKana.lenda();
 })();
