@@ -7,12 +7,14 @@ var kuu = kuupaev.getMonth();
 var aasta = kuupaev.getFullYear();
 document.write("<b>" + paev + "/" + (kuu + 1) + "/" + aasta + "</b>");
 </script>
-<p>
-<script type="text/javascript">
-kasutaja="rinde";
-server="tlu.ee";
-document.write('Minu e-posti aadress on: ');
-document.write('<a href="mailto:' + kasutaja + '@' + server + '">');
-document.write(kasutaja + '@' + server +'</a>');
-</script>
-</p>
+
+(function){
+    document;
+    document.getElementsByTagName(´nav`) [0];
+    /*saad kätte kõik elemendid mis tag-ga, näiteks navigatsioon (mitmuses)*/
+}
+function domLoaded(){
+        alert(`Tere`);
+        }
+    document.addEventListener(`DOMContentLoaded, domLoaded)
+    
