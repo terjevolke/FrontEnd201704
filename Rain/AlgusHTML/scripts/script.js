@@ -410,6 +410,13 @@ document.addEventListener('DOMContentLoaded', domLoaded)
 window.onload = loaded;
 
 
-
-
+// Muudan vajutades nupu teksti htmlis ära
+var pealkirjad = document.getElementsByTagName('h1');
+var nupuke = document.getElementById("nupp");
+function nupuvajutus(){
+    this.innerHTML = "Vajutatud";
+}
+nupuke.addEventListener("click", nupuvajutus);
+pealkirjad[0].addEventListener("click", nupuvajutus);
+// nupuke.removeEventListener(); - kustutab mälust mutuja nupuke ja tema funktsiooni
 
