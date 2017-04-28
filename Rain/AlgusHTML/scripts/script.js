@@ -450,9 +450,10 @@ muutujad[1].addEventListener("keydown", key);
 //callback, selleks et saata funktsioon argumendina edasi
 
 function funk2(){
-    console.log('Hello')
+    console.log('Hello callback')
 }
 function funk(callback){
     callback();
 }
 funk(funk2); 
+
