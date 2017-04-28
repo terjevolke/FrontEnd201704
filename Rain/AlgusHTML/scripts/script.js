@@ -367,3 +367,21 @@ minuMoodul.ytlenimi()
     sinuKana.nimeta();
     sinuKana.lenda();
 })();
+
+// suhtlemine html-ga, info töötlemine otse lehitsejas !!!!!
+
+(function(){
+    document;
+    document.getElementsByTagName('nav')[0];  //saad kätte esimese elemandi navigatsioonist
+    document.getElementsByClassName('paragraph');
+    var artikkel = document.getElementById('artikkel');
+    document.querySelector('#artikkel');   // siia võib panna ka klassi vms
+    document.querySelectorAll('.paragraph');
+    $('.paragraph');
+    artikkel.className;
+    artikkel.classList; //ei ole veel IE 11 toetatud
+    artikkel.parentElement; //antud juhul <main>
+    artikkel.children; // annab lapse
+
+})();
+
