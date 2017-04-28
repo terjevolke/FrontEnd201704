@@ -408,6 +408,9 @@ function loaded(){
 }
 document.addEventListener('DOMContentLoaded', domLoaded)
 window.onload = loaded;
+//window.addEventListener('load', loaded);
+// jquery-is sama saab ->
+//$(...)
 
 
 // Muudan vajutades nupu teksti htmlis ära
@@ -419,4 +422,29 @@ function nupuvajutus(){
 nupuke.addEventListener("click", nupuvajutus);
 pealkirjad[0].addEventListener("click", nupuvajutus);
 // nupuke.removeEventListener(); - kustutab mälust mutuja nupuke ja tema funktsiooni
+
+
+//kalkulaatori tegemine
+
+var muutujad = document.querySelectorAll("var input");
+var vastus = document.getElementById("vastus");
+function sisend(){
+    var arv1 = parseFloat(muutujad[0].value) || 0;
+    var arv2 = parseFloat(muutujad[1].value) || 0;
+    vastus.innerHTML = arv1 + arv2;
+    console.log(arv1 + " " + arv2);
+}
+//nupuke.addEventListener("click", sisend);  //arvutab siis kui vajutatakse nuppu
+//muutujad[0].addEventListener("input", sisend);  //arvutab siis kui tuleb sisend
+//muutujad[1].addEventListener("input", sisend);
+
+// alljärgnev arvutab enter klahvi vajutamisel
+function key(event){
+    if (event.which === 13)
+        sisend.call(this);
+};
+muutujad[0].addEventListener("keydown", key);
+muutujad[1].addEventListener("keydown", key);
+
+
 

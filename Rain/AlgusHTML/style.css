@@ -43,7 +43,7 @@ nav{
     top: 20px;**/
     padding: 0px 0px 10px 0px;
 }
-nav:first-of-type{
+nav:first-of-type, #kalk{
     align-self: flex-end;
     /** flex-end praegu mõjutab ülevalt alla **/
 }
