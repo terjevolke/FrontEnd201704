@@ -1,8 +1,8 @@
 body {
-    background-color: palegoldenrod;
+    background-color: lemonchiffon;
 }
 #artikkel{
-    background-color: peachpuff;
+    background-color: lightblue;
     max-width:1024px
     /*px, %,em, rem, pt*/
 }
@@ -20,11 +20,18 @@ article {
  }
  nav{
      font-size: 5 em;
-     background-color: indianred;
+     background-color: lightskyblue;
      color: lawngreen;
      position: fixed;
-     left: 50px;
-     top: 50px;
+     left: 900px;
+     top: 30px;
+    #wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify content: center;
+        align-content: flex end;
+        
+    }
 
 
  }
