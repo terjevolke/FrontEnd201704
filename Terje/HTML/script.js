@@ -157,4 +157,12 @@ laused[i]=t2hed.join("");
 }
 
 
-alert (massiiv);
+function domLoaded(){
+    alert ("^Tere");
+}
+document.addEventListener("DomContentLoaded", domLoaded)
+
+function domLoaded(){
+    var pealkirjad=`document`.getElementsByTagName (h1);
+    pealkirjad[0].classlist.remove("blockquote-reverse");
+}
