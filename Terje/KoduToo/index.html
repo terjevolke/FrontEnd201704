@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8"
-    <link rel="stylesheet" href="styles.css";>
-  <link rel="script.src" href="script.js;">
+<head>    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script.src="script.js">
 
-<!DOCTYPE html>
-<html>
-<head>
+</head>
   <style>
      
 
-header style {
-    background-image: url ("sunshine.jpg");
-    clear: left;
-   <p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sunshine.jpg" width="650" height="99" alt="ylemine_osa"> }
+header {
+    background-image: url("sunshine.jpg");
+    
+   }
 
 .button {
     background-color: #C5FF49; 
@@ -47,8 +46,12 @@ header style {
 <header style="font-family:verdana;
             color:#65b86c;
             font-size: 80px;
-           letter-spacing: 5px; 
-            margin:50px 50px"
+            font-weight: 900;
+           letter-spacing: 10px;
+           text-align:left;
+           padding: 100px 50px;
+            
+            margin:30px 10px"
 >AASTAAJAD</header>
 
 
@@ -56,21 +59,19 @@ header style {
 <p style="font-family:verdana;color:rgb(90,90,90);font-size: 30px;
             margin:50px 50px"
 <p title="vajuta mummu peale, et teada saada">
-ja kuidas nad peaksid välja nägema:</p>
+Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal</p>
 
 
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\kevad.jpg"><button class="button button">kevad</button>
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sunshine.jpg"><button class="button button2">suvi</button>
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sygis.jpg"><button class="button button3">sügis</button>
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\talv.jpg"><button class="button button4">talv</button>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\kevad.jpg"><button class="button button">kevad</button></a>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sunshine.jpg"><button class="button button2">suvi</button></a>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sygis.jpg"><button class="button button3">sügis</button></a>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\talv.jpg"><button class="button button4">talv</button></a>
 
 
-
- <h2 style="font-family:verdana;color:rgb(90,90,90);font-size: 20px;
-            margin:50px 50px; float: left;"
+ <p style="font-family:verdana; color:rgb(70,70,70);font-size: 20px;letter-spacing: 0,8px; padding: 50px 10px 50px;
+            margin:50px 50px; float: left; width: 70%"
+            
  <blockquote cite="<blockquote cite="https://et.wikipedia.org/wiki/Aastaajad">
-Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal.<br>
 
 <br><br>Eestis jaotatakse aasta ilmastiku ja taimede elu iseärasuste järgi rahvapäraselt tavaliselt neljaks aastaajaks: kevad, suvi, sügis, talv. Aastaaegu võidakse eristada ka rohkem (nt. varakevad, südasuvi, hilissügis).
 
@@ -80,7 +81,8 @@ Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal.<br>
 
 <br><br>Ka astronoomilised aastaajad (astronoomiline kevad, suvi, sügis ja talv) kannavad samu nimetusi. Nende puhul on eraldajateks pööripäevad, ehk täpsemini kevadine võrdpäevsus, suvine päikeseseisak, sügisene võrdpäevsus ja talvine päikeseseisak. Ilmastiku järgi toimub aastaaja vahetumine tavaliselt varem kui astronoomilise kriteeriumi järgi.
 </blockquote>
-</h2>
+</p>
+
 
 
 <footer style="background-color: lightgoldenrodyellow;
@@ -90,9 +92,16 @@ Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal.<br>
             font-size: 20px"</footer>
 <footer id="demo"></footer>
 
- <script>
-document.getElementById("demo").innerHTML = Date();
-</script>           
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
 
 
 </body>
