@@ -1,0 +1,30 @@
+header {
+    background-image: url("sunshine.jpg");
+    
+   }
+
+.button {
+    background-color: #C5FF49; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    max-width:500px;
+    padding: 15px;} 
+    
+     
+
+.button2 {background-color: #F5d500;} 
+.button3 {background-color: #f48300;} 
+.button4 {background-color: #e7e7e7; color: darkgray;} 
+

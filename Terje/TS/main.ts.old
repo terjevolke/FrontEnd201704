@@ -1,0 +1,52 @@
+
+var muutuja : string = "Tere";
+alert(muutuja + " maailm!");
+class Loomad{
+    constructor(){
+
+    }
+    private loomad : string [] =[]// [´Kass´, ´Koer´];
+    lisaLoom(uusLoom : string){
+        this.loomad.push(uusLoom);
+    }
+    eemaldaLoom(i : number){
+        this.loomad.splice(i, 1);
+    }
+    kuvaLoomad(){
+        console.log(this.loomad);
+    }
+}
+// edasi jama
+var olendid = new Loomad ();
+olendid.kuvaLoomad();
+let nimekiri: HTMLElement[]
+
+let loomHTML: string =""
+async function getPage(file: string, loomaNimi: string){
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function(){
+        if(this.readyState === 4 && this.status === 200){
+            document.getElementById("wrapper").innerHTML = loomHT;
+            this.responseText;
+        }
+    }
+    xmlhttp.open("GET", "loom.htm", true);
+    axait xmlhttp.send();
+    let li = document.createElement ('li');
+    li.innerHTML = loomHTML;
+    li.getElementsByTagName('span').item(0).innerText = loomaNimi;
+    nimekiri.push(li);
+    //document.getElementById("wrapper").innerHTML = loomHTML;
+    loop()
+
+function loop ()
+nimekiri.forEach((v: HTMLElement)=>){
+    
+    document.getElementById("wrapper").innerHTML += v.innerHTML;
+
+async function(){
+getPage("loom.htm", "wrapper");
+getPage("loom.htm", "id1");
+getPage("loom.htm", "id2");
+loop()
+}
