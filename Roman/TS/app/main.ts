@@ -21,7 +21,7 @@ class App {
         if(window.location.hash === '')
             window.location.hash = this._navLinks[0].link;
         let nav = new Navigation(this._navLinks);
-
+        this._checkParams();
         this._urlChanged();
         let animals = new Animals();
         /*
@@ -51,6 +51,22 @@ class App {
                 }
             }
         );
+    }
+    _checkParams(){
+        let name = Helper.getParameterByName('name');
+        let joined = Helper.getParameterByName('joined') as Joined;
+        if(name && joined){
+            Helper.removeParams();
+            let people : Participant[] = JSON.parse(localStorage.getItem('people'));
+            if(!people){
+                people = [];
+            }
+            let person : Participant = {name: name, joined: joined};
+            people.push(person);
+            console.log(people);
+            localStorage.setItem('people', JSON.stringify(people));
+        }
+            
     }
 }
 let app = new App();
