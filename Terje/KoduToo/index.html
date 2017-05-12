@@ -3,7 +3,21 @@
 <head>    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    
     <script src="script.js"></script>
+     <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+
 
 </head>
 <body>
@@ -18,21 +32,21 @@
             
             margin:30px 10px"
 >AASTAAJAD</header>
-
+<p> böö </p>
 
 
 <p style="font-family:verdana;color:rgb(90,90,90);font-size: 30px;
             margin:50px 50px"
 <p title="vajuta mummu peale, et teada saada">
 Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal</p>
+<p> böö </p>
 
-
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\kevad.jpg"><button class="button button">kevad</button></a>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\kevad.jpg"><button class="button">kevad</button></a>
 <p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sunshine.jpg"><button class="button button2">suvi</button></a>
 <p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\sygis.jpg"><button class="button button3">sügis</button></a>
-<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\talv.jpg"><button class="button button4">talv</button></a>
+<p><a href="C:\Users\Terje\Documents\FrontEnd201704\Terje\KoduToo\talv.jpg"><button class="button button4">talv</button></a></p>
 
-
+<p> böö </p>
  <p style="font-family:verdana; color:rgb(70,70,70);font-size: 20px;letter-spacing: 0,8px; padding: 50px 10px 50px;
             margin:50px 50px; float: left; width: 70%"
             
@@ -46,7 +60,16 @@ Aastaajad on perioodid, milleks aasta jaotatakse loodusnähtuste põhjal</p>
 
 <br><br>Ka astronoomilised aastaajad (astronoomiline kevad, suvi, sügis ja talv) kannavad samu nimetusi. Nende puhul on eraldajateks pööripäevad, ehk täpsemini kevadine võrdpäevsus, suvine päikeseseisak, sügisene võrdpäevsus ja talvine päikeseseisak. Ilmastiku järgi toimub aastaaja vahetumine tavaliselt varem kui astronoomilise kriteeriumi järgi.
 </blockquote>
-</p>
+
+<p> böö </p>
+
+<div ng-app="">
+ 
+
+<h1><input type="text" ng-model="name" placeholder="minu lemmikaastaaeg on"></h1>
+<h1>Tere {{name}}!</h1>
+
+</div>
     
 
 

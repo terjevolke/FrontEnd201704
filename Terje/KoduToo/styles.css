@@ -1,7 +1,9 @@
 header {
-    background-image: url("sunshine.jpg");
+    background-image: url("sunshine.jpg")
+ }
+ .body {background-color: #f5FF49;}
     
-   }
+  
 
 .button {
     background-color: #C5FF49; 

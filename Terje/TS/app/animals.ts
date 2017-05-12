@@ -1,8 +1,8 @@
 
 console.log('animals.ts');
-class Animals{
+class Animals {
     constructor(){
-        this._cacheDOM();
+      this._cacheDOM();
         this._bindEvents();
        
         this._render();
@@ -16,7 +16,7 @@ class Animals{
     private _list : HTMLUListElement;
 
     private _cacheDOM(){
-        this._template = Helper.getHTMLTemplate("animal-template.htm");
+        this._template = Helper.getHTMLTemplate("templates/animal-template.html");
         this._animalsModule = document.getElementById('animalsModule');
         this._button = this._animalsModule.getElementsByClassName('button').item(0) as HTMLButtonElement;
         this._input = this._animalsModule.getElementsByTagName ('input').item(0);
