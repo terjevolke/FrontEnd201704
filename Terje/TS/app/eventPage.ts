@@ -19,7 +19,7 @@ class EventPage extends Page{
 
 
     private _participant : Participant[] = [{name: 'Juku Salu', joined: 'Yes'},
-                                            {name: 'Peeter Salu', joined: 'Yes'}
+                                            {name: 'Peeter Salu', joined: 'Yes'},
                                             {name: 'Malle Puu', joined: 'No'}]
     
     private _template : string;

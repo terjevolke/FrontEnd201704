@@ -46,3 +46,4 @@ _urlChanged(e){
     this._render();
 
 }
+}

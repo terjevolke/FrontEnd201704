@@ -46,4 +46,3 @@ class Gallery extends Page{
          this._list.innerHTML =pics;
         }
     }
-}

@@ -1,7 +1,8 @@
 /// <reference path="helper.ts" />
 /// <reference path="navigation.ts" />
 /// <reference path="gallery.ts" />
-/// <reference path="eventPages.ts" />
+/// <reference path="home.ts" />
+/// <reference path="eventPage.ts" />
 /// <reference path="animals.ts" />
 console.log ('main.ts');
 
@@ -25,16 +26,16 @@ class App {
     this._checkParams();
     this._urlChanged();
    
-    let animals = new Animals();
     
-    animals.showAnimals();
+    
+  /*animals.showAnimals();
     animals.addAnimal('Lehm');
     animals.showAnimals();
     animals.removeAnimal(1);
     animals.showAnimals();
     (async() =>{
         console.log(await Helper.getHTMLTemplate('animal-template.htm'));
-    })();
+    })();*/
    
     }
     _urlChanged(){
@@ -43,7 +44,7 @@ class App {
             (value:NavLink)=>{
                 if (window.location.hash === value.link){
                     if(value.link ===this._navLinks[0].link)
-                        this.page = new Gallery();//
+                        this.page = new Home();//
                     else if (value.link ===this._navLinks[1].link)
                         this.page = new Gallery();
                     else if (value.link ===this._navLinks[2].link)
